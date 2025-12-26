@@ -7,6 +7,7 @@ ZSH_POWERLINE_SHOW_GIT_BRANCH_ONLY="true"
 ZSH_POWERLINE_SHOW_OS="false"
 ZSH_THEME="solarized-powerline"
 DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
 CELLAR="$(brew --cellar)"
 GHOSTSCRIPT="$(find $CELLAR -name gs | head -n 1)"
 
