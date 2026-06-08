@@ -42,6 +42,10 @@ mas install 937984704 # Amphetamine 'keep awake' app
 mas install 1091189122 # Bear – Markdown Notes
 mas install 1351639930 # Gifski
 mas install 803453959 # Slack
+mas install 904280696 # Things 3
+
+# Agents
+npm i -g @openai/codex
 
 # Oh My Zsh
 if [ ! -d ~/.oh-my-zsh ]; then
@@ -52,8 +56,15 @@ fi
 mkdir ~/Desktop/screenshots
 defaults write com.apple.screencapture location ~/Desktop/screenshots
 
-# Stop bouncing icons
+# Update dock preferences
 defaults write com.apple.dock no-bouncing -bool TRUE
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+killall Dock
+
+# I like to hold down keys
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Update zshrc
 (echo "source $(pwd)/zshrc") >> ~/.zshrc
