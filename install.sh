@@ -32,7 +32,10 @@ brew install \
 	gs \
 	mas \
 	Maccy \
-	difftastic
+	difftastic \
+	hugo \ 
+	imagemagick \
+	wget
 
 # Warp terminal (https://www.warp.dev/)
 brew install --cask warp
@@ -43,6 +46,7 @@ mas install 1091189122 # Bear – Markdown Notes
 mas install 1351639930 # Gifski
 mas install 803453959 # Slack
 mas install 904280696 # Things 3
+mas install 775737172 # IA Writer
 
 # Agents
 npm i -g @openai/codex
